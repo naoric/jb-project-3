@@ -33,6 +33,10 @@ app.post('/api/register', function(req, res) {
     res.json(req.body);
 });
 
+app.get('/about', function (req, res) {
+    res.json({content: 'about us'});
+})
+
 app.get('/login/*', function(req, res) {
     req.session.isLoggedIn = true;
 
