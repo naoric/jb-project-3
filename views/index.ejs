@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/basscss/8.0.3/css/basscss.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body ng-app="MyYoutubeList">
+
+<main class="container">
+    <header class="header">
+        <h1 class="mb2 font-normal">Register</h1>
+        <nav class="bg-light-gray">
+            <ul class="m0 p0 list-reset clearfix nav-menu">
+                <li class="col"><a href="#" class="block p1 text-decoration-none color-dark-gray">Home</a></li>
+                <li class="col"><a href="#" class="block p1 text-decoration-none color-dark-gray">Login</a></li>
+                <li class="col"><a href="#" class="block p1 text-decoration-none color-dark-gray">Register</a></li>
+                <li class="col"><a href="#" class="block p1 text-decoration-none color-dark-gray">Playlist</a></li>
+                <li class="col"><a href="#" class="block p1 text-decoration-none color-dark-gray">Add Video</a></li>
+                <li class="col"><a href="#" class="block p1 text-decoration-none color-dark-gray">Edit Video</a></li>
+                <li class="col"><a href="#" class="block p1 text-decoration-none color-dark-gray">Play Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <ng-view></ng-view>
+    </main>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+    <script src="/javascripts/index.js"></script>
+    <script src="/javascripts/route-config.js"></script>
+</body>
+</html>

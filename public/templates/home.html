@@ -1,0 +1,23 @@
+<div class="article">
+    <form ng-submit="registerInServer()" class="col-6 mt3 mx-auto border clearfix">
+        <div class="p2">
+            <label class="inline-block col-3" for="full-name">Full Name: </label>
+            <input ng-model="user.fullName" class="p1 border-light-gray" type="text" name="" id="full-name">
+        </div>
+        <div class="p2">
+            <label class="inline-block col-3" for="email">Email: </label>
+            <input ng-model="user.email" class="p1 border-light-gray" type="text" name="" id="email">
+        </div>
+        <div class="p2">
+            <label class="inline-block col-3" for="password">Password: </label>
+            <input ng-model="user.password" class="p1 border-light-gray" type="password" name="" id="password">
+        </div>
+        <div class="p2">
+            <label class="inline-block col-3" for="confirm-password">Confirm Password: </label>
+            <input ng-model="user.confirm" class="p1 border-light-gray" type="password" name="" id="confirm-password">
+        </div>
+        <div class="p2">
+            <button type="submit" class="px2 py1 mb2 right pointer bold border-bottom-blue bg-awesome-blue white border-none">Register</button>
+        </div>
+    </form>
+</div>
