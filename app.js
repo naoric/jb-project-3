@@ -37,6 +37,11 @@ app.get('/api/about', function (req, res) {
     res.send('About us Page');
 });
 
+
+app.get('/about', function (req, res) {
+    res.json({content: 'about us'});
+})
+
 app.get('/login/*', function(req, res) {
     req.session.isLoggedIn = true;
 
