@@ -27,7 +27,6 @@ app.use(session({ secure: false, resave: false, saveUninitialized: false, secret
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
 
 app.post('/api/register', function(req, res) {
     console.log(req.body);
